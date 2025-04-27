@@ -1,0 +1,77 @@
+Build a web-based College Dashboard named EduSync Dashboard with three user roles: Admin, Teacher, and Student. The app should use Supabase for authentication and data storage. The platform must be responsive, modern, and user-friendly, designed primarily for web use.
+
+🛠️ Tech Stack
+* Frontend: React.js (preferred), HTML/CSS/JS if React not available
+* Backend/Database: Supabase (auth + relational data)
+* Hosting: Replit (initial), compatible with Supabase
+* Languages:
+    * User interaction with Replit Agent: English
+    * Application interface: English
+
+🔐 User Roles & Permissions
+1. Admin Dashboard
+* Add/update/delete Students and Teachers
+* Assign teachers to subjects, years, branches, and sections
+* Create and manage timetables
+* Make college-wide announcements
+* Upload/view student documents (certificates, 10th marks, grade sheets)
+* View student performance analytics
+* View system analytics (number of users, activity stats)
+* Send broadcast messages to students or teachers
+* Manage user roles and permissions
+* Export data (e.g., attendance, grades) to PDF/Excel
+* Upload shared college resources
+* Notification center for important updates
+2. Student Dashboard
+* View personalized timetable
+* Track attendance percentage per subject
+* Chat with assigned teachers
+* Upload/download assignments
+* Use AI tutor to:
+    * Summarize uploaded notes
+    * Clarify subject-related questions
+* Access shared resources and materials
+* View/download important documents (10th marks, college grade sheets, certificates)
+* View personal performance reports and charts
+* Notification center
+3. Teacher Dashboard
+* Teachers are assigned subjects across multiple years, branches, and sections
+* Use filters to switch between:
+    * Subject → Year → Branch → Section
+* View list of enrolled students per subject-group
+* Mark and update student attendance per subject-group
+* Upload/view assignments and teaching materials for specific subject-groups
+* Review and grade student submissions
+* View student performance analytics per subject-group
+* Chat with students individually or by subject group
+* Make announcements for specific subject-groups (e.g., test schedules)
+* AI assistant to:
+    * Summarize performance trends
+    * Suggest quiz questions or improvement areas
+* Dashboard shows overview of tasks: pending grading, unmarked attendance, new messages, etc.
+
+🗂️ Supabase Schema Overview
+* Users: General user info (role, auth ID, profile)
+* Students: Detailed student data
+* Teachers: Detailed teacher data
+* Subjects: List of subjects
+* Branches: e.g., CSE, ECE, ME
+* Classes: Year + Branch + Section
+* Subject_Assignments: Links teacher_id, subject_id, class_id
+* Attendance: Track by date, subject, class, and student
+* Assignments: Linked to subject + class
+* Submissions: Linked to assignment + student
+* Messages: Chat between teachers and students
+* Announcements: Filtered by role or class
+* Resources: Uploaded documents/notes
+* Certificates: Uploaded student docs (grades, mark sheets)
+
+📦 Requirements Summary
+* Role-based dashboards: Admin, Teacher, Student
+* Supabase for authentication and relational data
+* Dynamic views and controls per role
+* File upload/download functionality
+* Real-time or near-real-time chat and updates
+* AI integration (basic GPT-style) for note summarizing and question answering
+* Responsive layout with modern dashboard design
+* Modular structure for future scalability
